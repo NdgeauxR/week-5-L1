@@ -18,20 +18,22 @@ function determineAgegroup(age) {
 }
 determineAgegroup(prompt("Age"));
 
-function mathTime("num1, num2, operator") {
-  
-if (operator ### "addition") {
+
+function mathTime(num1, num2, operator) {
+
+  if (operator === "addition") {
   alert = (num1 + num2)
-} else if (operator ###  "subtraction") {
+} else if (operator === "subtraction") {
   alert (num1 - num2);
-} else if (operator ### "multiplication") {
+} else if (operator === "multiplication") {
   alert (num1 * num2);
-} else if (operator ### "division") {
+} else if (operator === "division") {
   alert(num1 / num2);
   }
 }
 let number1 = prompt("What is the first number?");
 let number2 = prompt("What is the second number?");
-let oper = prompt("Which operation will be performed? eg addition, subtraction, multiplication, division.");
+let oper = prompt("Which operation will be performed? eg addition, subtraction, multiplication, division");
 
 mathTime(number1, number2, oper);
+
